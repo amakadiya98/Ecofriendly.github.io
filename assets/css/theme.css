@@ -33,7 +33,7 @@
 .section-title-block p {
   max-width: 600px;
   margin: auto;
-  color: #6b7280;
+  color: var(--theme-gray-color);
   font-size: 18px;
 }
 

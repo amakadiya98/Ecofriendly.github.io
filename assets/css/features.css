@@ -33,7 +33,7 @@
   color: #111827;
 }
 .features-section .feature-item p {
-  color: #6b7280;
+  color: var(--theme-gray-color);
   line-height: 1.6;
   font-size: 15px;
   max-width: 260px;

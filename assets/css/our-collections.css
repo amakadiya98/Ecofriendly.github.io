@@ -45,7 +45,7 @@
 .collection-section .product-card  .product-info  .category {
   font-size: 12px;
   text-transform: uppercase;
-  color: #6b7280;
+  color: var(--theme-gray-color);
 }
 .collection-section .product-card .product-info h3 {
   font-size: 18px;
