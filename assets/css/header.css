@@ -1,0 +1,178 @@
+/* header-css */
+.theme-header-part {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    transition: background 0.5s ease;
+    background-color: #FCFCF3CC;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e5e7eb;
+}
+.theme-header-part.scrolled {
+    background-color: #FCFCF3CC;
+}
+.theme-header-part .theme-header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+.theme-header-part .theme-header-content .logo-part .logo-text{
+    background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: none;
+}
+.theme-header-part .theme-header-content nav{
+    display: flex;
+    gap: 32px;
+}
+.theme-header-part .theme-header-content .nav-text{
+    font-weight: 500;
+    font-size: 16px;
+    color:  var( --primary-black-color);
+    text-decoration: none;
+    position: relative;
+}
+.theme-header-part .theme-header-content .nav-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+}
+.theme-header-part .theme-header-content .nav-text:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.theme-header-part .theme-header-content .search-ctc-btn{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.theme-header-part .theme-header-content .search-ctc-btn .search-part .search-btn{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+/* hamburger */
+.hamburger-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    max-width: 400px;
+    height: 100%;
+    transform: translateX(-110%);
+    transition: transform 0.3s ease;
+    background: var(--theme-white-color);
+    padding: 70px 20px;
+    z-index: 20000;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.mobile-menu .logo-part .logo-text {
+    background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 60px;
+}
+.mobile-menu .nav-text {
+    font-weight: 400;
+    font-size: 22px;
+    color: #162456;
+    text-decoration: none;
+}
+
+/* Show menu */
+.mobile-menu.active {
+    transform: translateX(0);
+}
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: transparent;
+    display: none;
+    z-index: 15000;
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+.menu-overlay.active {
+    display: block;
+}
+
+
+/* header responsive css  */
+@media (min-width: 992px) {
+    .mobile-menu {
+        transform: translateX(-110%) !important;
+    }
+    .menu-overlay {
+        display: none !important
+    }
+}
+@media screen and (max-width: 991px){
+    .theme-header-part .theme-header-content nav {
+        display: none;
+    }
+    .mobile-menu nav {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .hamburger-btn {
+        display: block;
+    }
+    .desktop-shop-btn {
+        display: none;
+    }
+    .mobile-shop-btn {
+        display: block;
+        margin-top: 20px;
+    }
+    .theme-header-part .theme-header-content .search-ctc-btn {
+        margin-left: auto;
+        padding-right: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .mobile-menu .nav-text{
+        font-size: 18px;
+    }
+    .mobile-menu .logo-part .logo-text {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+     .mobile-menu {
+        max-width: 218px;
+        padding: 30px 20px;
+    }
+    .mobile-menu .nav-text {
+		font-size: 16px;
+	}
+    .mobile-shop-btn {
+		margin-top: 0;
+	}
+    .mobile-menu nav {
+        gap: 20px;
+    }
+}

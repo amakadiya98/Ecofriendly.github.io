@@ -1,11 +1,18 @@
+@import url('../css/color.css');
+@import url('../css/header.css');
+@import url('../css/theme.css');
 @import url('../css/fonts.css');
+@import url('../css/button.css');
 
-:root {
-  --primary-font-family: 'Poppins';
-  --primary-theme-color: #228B22;
-  --secondary-theme-color: #F5F5DC;
+
+
+*{
+    margin: 0;
 }
 
 body{
     font-family: var(--primary-font-family);
 }
+
+
+
