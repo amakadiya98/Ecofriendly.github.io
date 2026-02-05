@@ -1,0 +1,125 @@
+/* banner section style guide */
+.banner-section{
+    background-image: url("../images/banner-nature.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.banner-section .banner-section-overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right,rgba(9, 83, 9, 0.9) 0%,rgba(9, 83, 9, 0.4) 50%,rgba(9, 83, 9, 0) 100%);
+    z-index: 0;
+}
+.banner-section .banner-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.banner-section .banner-content .center-text-part{
+    max-width: 35%;
+    margin: auto;
+}
+.banner-section .banner-content .badge{
+    margin-bottom: 26px;
+    animation-delay: 0.5s;
+
+}
+.banner-section .banner-content .badge p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--theme-dark-green);
+    font-weight: 300;
+    font-size: 16px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    color: var(--theme-white-color);
+    width: fit-content;
+}
+.banner-section .banner-content .banner-head-part h2{
+    font-weight: 700;
+    font-size: 56px;
+    color: var(--theme-white-color);
+    animation-delay: 1s;
+    line-height: 60px;
+}
+.banner-section .banner-content .banner-head-part .number-block{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 0;
+    animation-delay: 1.5s;
+}
+.banner-section .banner-content .banner-head-part .number-block .num-big{
+    background: linear-gradient(360deg, rgb(228 230 212) 0%, rgb(62 249 148 / 70%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 56px;
+}
+.banner-section .banner-content .banner-head-part .number-block .num-small{
+    color: var(--theme-white-color);
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.banner-section .banner-content .theme-button{
+    padding: 12px 48px;
+    animation-delay: 2s;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    font-size: 20px;
+}
+.banner-section .banner-content .button-part{
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1366px) {
+    .banner-section .banner-content .center-text-part{
+        max-width: 45%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .banner-section .banner-content .center-text-part{
+        max-width: 60%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .banner-section .banner-content .center-text-part{
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 620px) {
+    .banner-section .banner-content .center-text-part{
+        max-width: 100%;
+    }
+    .banner-section .banner-content .banner-head-part h2{
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .banner-section .banner-content .banner-head-part .number-block .num-big{
+        font-size: 48px;
+    }
+    .banner-section .banner-content .banner-head-part .number-block{
+        gap: 30px;
+    }
+    .banner-section .banner-content .button-part{
+        flex-wrap: wrap;
+    }
+    .banner-section .theme-button{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-section .theme-button{
+        font-weight: 500;
+    }
+}

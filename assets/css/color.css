@@ -1,8 +1,10 @@
 :root {
   --primary-font-family: 'Poppins';
   --primary-theme-color: #228B22;
+  --theme-dark-green: #049f04;
   --primary-theme-hover: #339933;
   --secondary-theme-color: #F5F5DC;
   --primary-black-color: #0a0a0a;
   --theme-white-color: #fff;
+
 }

@@ -4,10 +4,9 @@
     width: 100%;
     z-index: 9;
     transition: background 0.5s ease;
-    background-color: #FCFCF3CC;
+    background-color: #fcfcf3b0;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid #e5e7eb;
 }
 .theme-header-part.scrolled {
     background-color: #FCFCF3CC;

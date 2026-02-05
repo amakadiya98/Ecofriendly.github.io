@@ -1,54 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
-     <header class="theme-header-part fadeInDown animate-fast">
+<section class="banner-section">
+    <!-- header sceton start here -->
+    <header class="theme-header-part fadeInDown animate-fast">
+        <div class="container">
+            <div class="theme-header-content">
+                <div href="#" class="logo-part">
+                    <a href="#" class="logo-text">GTG</a>
+                </div>
+                <!-- navigation part -->
+                <nav>
+                    <a href="#" title="shop" class="nav-text">Shop</a>
+                    <a href="#" title="about" class="nav-text">About</a>
+                    <a href="#" title="contact" class="nav-text">Contact</a>
+                </nav>
+                <div class="search-ctc-btn ">
+                    <button class="theme-button desktop-shop-btn"><span>Shop Now</span></button>
+                </div>
+
+                <!-- Hamburger -->
+                <button id="hamburger" class="hamburger-btn">
+                    <img src="./assets/images/icon/menu.svg" alt="menu-icon" width="20px">
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- mobile header -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="logo-part">
+            <h2 class="logo-text">GTG</h2>
+        </div>
+        <nav>
+            <a href="#" title="shop" class="nav-text">Shop</a>
+            <a href="#" title="about" class="nav-text">About</a>
+            <a href="#" title="contact" class="nav-text">Contact</a>
+        </nav>
+        <button class="theme-button mobile-shop-btn">
+            <span>Shop Now</span>
+        </button>
+    </div>
+    <div id="menuOverlay" class="menu-overlay"></div>
+
+    <!-- banner-section content-start from here -->
+     <div class="banner-section-overlay"></div>
+      <div class="banner-content">
             <div class="container">
-                <div class="theme-header-content">
-                    <div href="#" class="logo-part">
-                        <a href="#" class="logo-text">GTG</a>
+                <div class="center-text-part">
+                <div class="badge">
+                    <p><img src="./assets/images/icon/award.svg">Awarded the best brand in the world</p>
+                </div>
+                <div class="banner-head-part ">
+                    <h2><span>Better Choices,</span></h2>
+                     <h2>Brighter <span>Future.</span></h2>
+                    <div class="number-block">
+                          <div class="block">
+                            <h2 class="num-big">100%</h2>
+                            <p class="num-small">Eco-Friendly</p>
+                        </div>
+                        <div class="block">
+                            <h2 class="num-big">20K+</h2>
+                            <p class="num-small">happy customers</p>
+                        </div>
                     </div>
-                    <!-- navigation part -->
-                    <nav>
-                        <a href="#" title="shop" class="nav-text">Shop</a>
-                        <a href="#" title="about" class="nav-text">About</a>
-                        <a href="#" title="contact" class="nav-text">Contact</a>
-                    </nav>
-
-
-                    <div class="search-ctc-btn ">
-                        <button class="theme-button desktop-shop-btn"><span>Shop Now</span></button>
-                    </div>
-
-
-                    <!-- Hamburger -->
-                    <button id="hamburger" class="hamburger-btn">
-                        <img src="./assets/images/icon/menu.svg" alt="menu-icon" width="20px">
-                    </button>
+                </div>
+                <div class="button-part">
+                      <div class="theme-button dark-green">
+                    <span>Shop Now</span>
+                </div>
+                <div class="theme-button outline-button">
+                    <span>Our Story</span>
+                </div>
+                </div>
+              
                 </div>
             </div>
-        </header>
-        <div id="mobileMenu" class="mobile-menu">
-            <div class="logo-part">
-                <h2 class="logo-text">GTG</h2>
-            </div>
-            <nav>
-                <a href="#" title="shop" class="nav-text">Shop</a>
-                <a href="#" title="about" class="nav-text">About</a>
-                <a href="#" title="contact" class="nav-text">Contact</a>
-            </nav>
-            <button class="theme-button mobile-shop-btn">
-                <span>Shop Now</span>
-            </button>
         </div>
-        <div id="menuOverlay" class="menu-overlay"></div>
+    </section>
 
 
-        <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

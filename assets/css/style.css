@@ -1,5 +1,9 @@
 @import url('../css/color.css');
 @import url('../css/header.css');
+
+/* component wise css */
+@import url('../css/banner.css');
+
 @import url('../css/theme.css');
 @import url('../css/fonts.css');
 @import url('../css/button.css');
@@ -13,6 +17,5 @@
 body{
     font-family: var(--primary-font-family);
 }
-
 
 
