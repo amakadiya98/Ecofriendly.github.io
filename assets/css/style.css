@@ -1,12 +1,16 @@
 @import url('../css/color.css');
+@import url('../css/fonts.css');
 @import url('../css/header.css');
 
-/* component wise css */
+/* section-wise css */
 @import url('../css/banner.css');
+@import url('../css/our-collections.css');
+@import url('../css/features.css');
 
-@import url('../css/theme.css');
-@import url('../css/fonts.css');
 @import url('../css/button.css');
+@import url('../css/theme.css');
+
+
 
 
 
@@ -17,5 +21,4 @@
 body{
     font-family: var(--primary-font-family);
 }
-
 

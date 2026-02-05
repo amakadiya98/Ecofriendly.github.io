@@ -2,6 +2,56 @@
 /* common css */
 .container{
     margin : 0 auto;
-    max-width: 90%;
+    max-width: 1200px;
     width: 90%;
+}
+.section-spacing{
+    padding: 80px 0;
+}
+/* section common title */
+
+.section-title-block {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title-block .badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #d1fae5;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.section-title-block h2 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.section-title-block p {
+  max-width: 600px;
+  margin: auto;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.section-secondary-bg{
+    background-color: var(--secondary-theme-color);
+}
+@media screen and (max-width: 640px) {
+    .section-spacing{
+        padding: 40px 0;
+    }
+    .section-title-block h2{
+        font-size: 28px;
+        margin-bottom: 2px;
+    }
+    .section-title-block p{
+        font-size: 14px;
+    }
+    .section-title-block{
+        margin-bottom: 24px;
+    }
 }
