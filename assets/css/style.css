@@ -1,0 +1,11 @@
+@import url('../css/fonts.css');
+
+:root {
+  --primary-font-family: 'Poppins';
+  --primary-theme-color: #228B22;
+  --secondary-theme-color: #F5F5DC;
+}
+
+body{
+    font-family: var(--primary-font-family);
+}
