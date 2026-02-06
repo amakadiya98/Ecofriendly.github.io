@@ -119,7 +119,7 @@
 
 
 /* header responsive css  */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .mobile-menu {
         transform: translateX(-110%) !important;
     }

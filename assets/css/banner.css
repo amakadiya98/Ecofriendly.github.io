@@ -59,7 +59,8 @@
     animation-delay: 1.5s;
 }
 .banner-section .banner-content .banner-head-part .number-block .num-big{
-    background: linear-gradient(360deg, rgb(228 230 212) 0%, rgb(62 249 148 / 70%) 100%);
+    /* background: linear-gradient(360deg, rgb(228 230 212) 0%, rgb(62 249 148 / 70%) 100%); */
+    background: linear-gradient(290deg, rgb(255 255 255 / 93%) 0%, #09f109ed 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;

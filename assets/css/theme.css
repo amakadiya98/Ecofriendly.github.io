@@ -23,11 +23,13 @@
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 16px;
+  color: var(--primary-black-color);
 }
 
 .section-title-block h2 {
   font-size: 42px;
   margin-bottom: 16px;
+  color: var(--primary-black-color);
 }
 
 .section-title-block p {
@@ -39,6 +41,11 @@
 
 .section-secondary-bg{
     background-color: var(--secondary-theme-color);
+}
+
+.owl-carousel.testimonial-slider .owl-item img{
+    display: inline-flex;
+    width: auto;
 }
 @media screen and (max-width: 640px) {
     .section-spacing{
