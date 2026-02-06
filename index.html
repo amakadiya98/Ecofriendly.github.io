@@ -157,7 +157,7 @@
                 </div>
             </div>
             <div class="view-all">
-                <button class="theme-button">View All Products →</button>
+                <button class="theme-button">View All Products</button>
             </div>
         </div>
     </section>
@@ -383,12 +383,15 @@
                     </p>
                 </div>
                 <div class="newsletter-content">
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email" required />
-                        <button type="submit" class="theme-button newsletter-form-button">
+                    <form class="newsletter-form" id="newsletterForm" novalidate>
+                        <input type="email" id="email" placeholder="Enter your email" required />
+                        <div class="newsletter-form-button">
+                        <button type="submit" class="theme-button">
                             Subscribe
                         </button>
+                        </div>
                     </form>
+                    <p id="formMessage" class="form-message"></p>
                 </div>
             </div>
         </div>
@@ -446,13 +449,7 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
+    <!-- external links -->
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/script.js"></script>

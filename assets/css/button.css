@@ -12,6 +12,7 @@
     transition: all 1s;
     width: fit-content;
     font-family: var(--primary-font-family);
+    z-index: 9;
 }
 .theme-button::before {
     content: "";
@@ -22,7 +23,7 @@
     height: 0;
     background: var(--primary-theme-hover);
     transition: height 0.45s ease-in-out;
-    z-index: 0;
+    z-index: -1;
 }
 .theme-button span {
     position: relative;

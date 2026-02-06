@@ -54,3 +54,34 @@ $('.testimonial-slider').owlCarousel({
         }
     }
 })
+
+// email checking with validation
+
+const form = document.getElementById("newsletterForm");
+const emailInput = document.getElementById("email");
+const message = document.getElementById("formMessage");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const email = emailInput.value.trim();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    message.className = "form-message";
+
+    if (email === "") {
+      message.textContent = "Please enter your email address.";
+      message.classList.add("error");
+      return;
+    }
+
+    if (!emailPattern.test(email)) {
+      message.textContent = "Please enter a valid email address.";
+      message.classList.add("error");
+      return;
+    }
+
+    message.textContent = "Thank you for connecting with Us";
+    message.classList.add("success");
+    emailInput.value = "";
+  });
